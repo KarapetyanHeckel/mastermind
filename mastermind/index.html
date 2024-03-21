@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Mastermind</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.3.1.js"></script>
+		<script>
+			var s = document.createElement("script");
+			s.src = "js/mastermin.js?"+Date.now();
+			document.head.appendChild(s);
+			
+			s=document.createElement("link");
+			s.rel="stylesheet";
+			s.href="css/style.css?" +Date.now();
+			document.head.appendChild(s);
+		</script>
+	</head>
+	<body >
+		<div id="plateau"></div>
+		<div id="choixBille"></div>
+		<div id="message">BRAVO VOUS AVEZ FINI LE JEU !!!</div>
+	</body>
+</html>

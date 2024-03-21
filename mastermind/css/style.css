@@ -1,0 +1,113 @@
+html,body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+
+body {
+	position: relative;
+	height:100%;
+	width:100%;
+}
+
+#tableMastermind {
+	border-spacing: 5px;
+	margin: auto;
+}
+
+.caseValide {
+	display: none;
+	position: relative;
+	height: 60px;
+	width: 60px;
+}
+
+.textValiderProp:hover {
+	color:green;
+	cursor: pointer;
+}
+
+
+.caseLignePlateauMastermind, .caseIndice {
+	height: 75px;
+	width: 75px;
+	border: 2px black solid;
+	border-radius:6px;
+	background-color: grey;
+}
+
+.billeMastermind {
+  display: inline-block;
+  position:relative;
+  background: black;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 3px;
+}
+
+.billePlaceMastermind {
+	position: relative;
+	margin:auto;
+	height: 60px;
+	width: 60px;
+	background: black;
+    border-radius: 50%;
+}
+
+.textInfoBille {
+	display: none;
+	position: absolute;
+	top:20px;
+	left:0;
+	color: white;
+}
+
+.billeMastermind:hover .textInfoBille, .billePlaceMastermind:hover .textInfoBille{
+	display: inline-block;
+}
+
+#plateau, #choixBille {
+  min-width:400px;
+  width: 60%;
+  margin: auto;
+}
+
+.bonneBouleMalPlacer {
+	color: white;
+}
+
+.bonneBouleBienPlacer {
+	color: red;
+}
+
+.mauvaiseBoule {
+	color: black;
+}
+
+.bonneBouleMalPlacer, .bonneBouleBienPlacer, .mauvaiseBoule {
+	width: 50%;
+	text-align: center;
+}
+
+#tableIndice {
+	width: 100%;
+	height:100%;
+}
+
+#message {
+	width: 80%;
+	margin: auto;
+	display: none;
+	text-align:center;
+	font-size: 24px;
+	color: green;
+	text-shadow: 1px 1px 2px black;
+}
+
+#valideImage, #croixImage {
+	cursor: pointer;
+	display:block;
+	height:50%;
+}
