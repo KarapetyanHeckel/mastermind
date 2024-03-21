@@ -1,5 +1,3 @@
-Fonctionalité:
-	
-Remarque:
 
-CSS:
+Remarque:
+-Utilisatiion à usage unique
