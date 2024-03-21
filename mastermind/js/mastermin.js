@@ -6,12 +6,12 @@ $(document).ready(function(){ // exécution uniquement quand la page html a fini
 
 var codeMastermind; // Dans initialisation
 var nombrebille; // Dans initialisation
-
+var billePiege;
 
 function initialisation() {
 	codeMastermind=['#ff0000','#00ff00','#0000ff','#ffff00']; //red, green, blue, yellow
 	nombrebille=100; // nombre de bille générer aléatoirement, les bille du code ne sont pas générer aléatoirement et sont pris en compte dans le nombre de bille
-	
+	billePiege=['#FFA000','#00AF00','#000CDF','#65F800']; // autant que nécessaire
 	creationPlateau();
 	creationListeBille();
 }
@@ -35,9 +35,10 @@ function ajoutNouvelleLigneMastermind() {
 
 function creationListeBille() {
 	var listeBille=[].concat(codeMastermind);
+	listeBille=listeBille.concat(billePiege);
 	var couleurAlea;
 	var couleurPareil=false;
-	for(var i=0; i<=nombrebille-4;i++) {
+	for(var i=0; i<=nombrebille-4-billePiege.length;i++) {
 		couleurAlea=couleurAleatoireHex();
 		for(var j=0; j<listeBille.length; j++) {
 			if(couleurAlea==listeBille[j])
